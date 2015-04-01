@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+<!-- recycled from 2014 :p -->
+<head>
+<meta charset="utf-8">
+<title>systemd-paddlectl</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link type="text/css" rel="stylesheet" href="cache/themes/theme6/css3.css">
+<link type="text/css" rel="stylesheet" href="cache/themes/theme6/global.css">
+<style type="text/css">
+#recenttopics {
+    table-layout: fixed;
+    width: 100%;
+}
+
+#recenttopics tbody {
+    line-height: 1;
+}
+
+#therump {
+    text-align: center;
+}
+
+#cr-stage {
+    margin: 0 auto;
+    cursor: none;
+    color: white;
+    z-index: 9; /* text on stage has 10 */
+}
+
+#shade {
+    background: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 8;
+    opacity: 0;
+}
+</style>
+<script type="text/javascript" src="aprilfools-2015/scripts/crafty-min.js"></script>
+<script type="text/javascript" src="aprilfools-2015/scripts/gameLaunch.js"></script>
+<script type="text/javascript" src="aprilfools-2015/scripts/components/edges.js"></script>
+<script type="text/javascript" src="aprilfools-2015/scripts/components/center.js"></script>
+<script type="text/javascript" src="aprilfools-2015/scripts/components/ball.js"></script>
+<script type="text/javascript" src="aprilfools-2015/scripts/components/brick.js"></script>
+<script type="text/javascript" src="aprilfools-2015/scripts/components/paddle.js"></script>
+<script type="text/javascript" src="aprilfools-2015/scripts/components/countdown.js"></script>
+<script type="text/javascript" src="aprilfools-2015/scripts/components/powerup.js"></script>
+<script type="text/javascript" src="aprilfools-2015/scripts/components/powerdown.js"></script>
+<script type="text/javascript" src="aprilfools-2015/scripts/scenes/common.js"></script>
+<script type="text/javascript" src="aprilfools-2015/scripts/scenes/loading.js"></script>
+<script type="text/javascript" src="aprilfools-2015/scripts/scenes/levelSetups.js"></script>
+<script type="text/javascript" src="aprilfools-2015/scripts/scenes/menu.js"></script>
+<script type="text/javascript" src="aprilfools-2015/scripts/scenes/play.js"></script>
+<script type="text/javascript" src="aprilfools-2015/scripts/scenes/gameover.js"></script>
+<script type="text/javascript" src="aprilfools-2015/scripts/scenes/win.js"></script>
+
+<script type="text/javascript" src="aprilfools-2015/scripts/aprilfools.js"></script>
+</head>
+<body>
+<div id="container"><a name="top" id="top"></a>
+<div id="shade"></div>
+<div id="header">
+<div id="logo">
+<div class="wrapper">
+<a href="index.php"><img src="images/logo/dark.png" alt="Winhistory-Forum" title="Winhistory-Forum"></a></div>
+</div>
+<div id="panel">
+<div class="upper">
+<div class="wrapper">
+<ul class="menu top_links">
+<li><a href="search.php">Suche</a></li>
+<li><a href="memberlist.php">Mitglieder</a></li>
+<li><a href="calendar.php">Kalender</a></li>
+</ul>
+<span class="welcome"><strong>Willkommen zurück, <a href="member.php?action=profile&amp;uid=24" id="fakename">Gast</a></strong> - Letzter Besuch: Gestern, <span id="faketime">23:00</span></span></div>
+</div>
+<div class="lower">
+<div class="wrapper">
+<ul class="menu panel_links">
+<li><a href="usercp.php">Benutzer-CP</a></li>
+</ul>
+<ul class="menu user_links">
+<li><a href="search.php?action=unread">Ungelesene Beiträge ansehen</a></li>
+<li><a href="private.php">Private Nachrichten</a> (0 ungelesen, <span id="fakecount">1</span> insgesamt)</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="content">
+<div class="wrapper">
+<table id="recenttopics" class="tborder" border="0" cellpadding="5" cellspacing="0">
+<thead>
+<tr>
+<td class="thead">
+<div><strong>Letztes Thema</strong></div>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="trow1 recenttopic" id="therump">
+<div id="cr-stage"></div>
+</td>
+</tr>
+</tbody>
+</table>
+<br></div>
+</div>
+<div id="footer">
+<div class="upper">
+<div class="wrapper">
+<ul class="menu bottom_links">
+<li><a href="impressum.php">Kontakt</a></li>
+<li><a href="http://www.winhistory.de/">winhistory.de</a></li>
+<li><a href="#top">Nach oben</a></li>
+<li><a href="misc.php?action=syndication">RSS-Synchronisation</a></li>
+<li><a href="misc.php?action=help" class="help">Hilfe</a></li>
+</ul>
+</div>
+</div>
+<div class="lower">
+<div class="wrapper"><span id="current_time"><strong>Es
+ist:</strong> 01.04.2015, <span id="realtime">00:00</span></span>
+<span id="copyright">Deutsche Übersetzung: <a href="http://www.mybboard.de" target="_blank">MyBBoard.de</a>, Powered by <a href="http://www.mybboard.net" target="_blank">MyBB</a>,
+&copy; 2002-2014 <a href="http://www.mybboard.net" target="_blank">MyBB Group</a>.</span> <span id="theme">Theme created by <a href="http://bellomandesign.com/" target="_blank">Justin
+S.</a></span></div>
+</div>
+</div>
+</div>
+</body>
+</html>
